@@ -1,0 +1,81 @@
+<p id="paragraf"></p>
+<script>
+  arrayObj = [{
+      id: 1,
+      kata: "kata pertama"
+    },
+    {
+      id: 2,
+      kata: "kata kedua"
+    },
+    {
+      id: 3,
+      kata: "kata ketiga"
+    }
+  ]
+  const paragraf = document.getElementById("paragraf");
+  arrayObj.map((data) => {
+    //mengulangi dan memanggil function sebanyak data yang ada
+    paragraf.innerHTML += tampil(data.id, data.kata);
+  });
+
+  function tampil(id, kata) {
+    return `
+				<p>dataa ke - ${id}</p>
+        <p>kata yang tampil adalah ${kata}
+			`;
+  }
+  //   let Paket = [
+  //   {
+  //     id: 0,
+  //     name: "Paket 1",
+  //     desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
+  //     price: 10000,
+  //   },
+  //   {
+  //     id: 1,
+  //     name: "Paket 2",
+  //     desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
+  //     price: 20000,
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Paket 3",
+  //     desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
+  //     price: 30000,
+  //   },
+  // ];
+
+  // const menuSection = document.querySelector(".menu-section");
+
+  // .map(() => {
+  //   menuSection.innerHTML += kartu(.name, .desc, .price, .id);
+  // });
+
+  // function kartu() {
+  //   return `<!-- card -->
+  // 	<div class="card">
+  // 		<button class="kategori" aria-readonly="true">Paket</button>
+  // 		<hr class="line" />
+  // 		<div class="container-content">
+  // 			<div>
+  // 				<img
+  // 					src="./images/example-product/indomie.jpg"
+  // 					alt=""
+  // 					class="produk-img"
+  // 				/>
+  // 			</div>
+  // 			<div class="content">
+  // 				<p></p>
+  // 				<p></p>
+  // 				<p></p>
+  // 				<div class="content2">
+  // 					<button class="tambah" id="pesan{id}">pesan</button>
+  // 				</div>
+  // 			</div>
+  // 		</div>
+  // 	</div>`;
+  // }
+
+  // .map(() => {});
+</script>
